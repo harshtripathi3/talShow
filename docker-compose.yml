@@ -3,7 +3,7 @@ version: '3'
 services:
   frontend:
     build: ./client
-    container_name: front
+    image: tripathiharsh9/frontend
     ports:
       - 5173:5173
     tty: true
@@ -15,7 +15,7 @@ services:
 
   backend:
     build: ./api
-    container_name: backend
+    image: tripathiharsh9/backend
     restart: always
     ports:
       - 8800:8800
