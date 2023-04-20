@@ -2,7 +2,7 @@ version: '3'
 
 services:
   frontend:
-    build: ./client
+    #build: ./client
     image: tripathiharsh9/frontend
     ports:
       - 5173:5173
@@ -14,7 +14,7 @@ services:
       - mern-net
 
   backend:
-    build: ./api
+    #build: ./api
     image: tripathiharsh9/backend
     restart: always
     ports:
