@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    margin: 50px 0px;
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    .container{
+        width: 1400px;
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+
+}
