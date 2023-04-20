@@ -1,0 +1,2 @@
+[ubuntu18]
+172.31.40.11 ansible_user=ubuntu
