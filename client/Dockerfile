@@ -1,16 +1,14 @@
 FROM node:16.15-alpine
 
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --production --frozen-lockfile
 
 COPY . .
-
-
 
 EXPOSE 5173
 
