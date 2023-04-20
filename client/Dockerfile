@@ -1,7 +1,7 @@
 FROM node:16.15-alpine
 
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
