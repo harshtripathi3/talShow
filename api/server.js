@@ -10,16 +10,30 @@ import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import winston from "winston";
 
 const app = express();
 dotenv.config();
 mongoose.set("strictQuery", true);
 
+const logger = winston.createLogger({
+  level: "info",
+  format: winston.format.json(),
+  defaultMeta: { service: "your-service-name" },
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: "logs/error.log", level: "error" }),
+    new winston.transports.File({ filename: "logs/combined.log" })
+  ]
+});
+
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
+    logger.info("Connected to MongoDB");
     console.log("Connected to mongoDB!");
   } catch (error) {
+    logger.error(error.message);
     console.log(error);
   }
 };
@@ -27,6 +41,28 @@ const connect = async () => {
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
+
+// Middleware function to log requests and responses
+app.use((req, res, next) => {
+  logger.info({
+    message: "API request",
+    method: req.method,
+    path: req.path,
+    query: req.query,
+    body: req.body
+  });
+
+  res.on("finish", () => {
+    logger.info({
+      message: "API response",
+      method: req.method,
+      path: req.path,
+      status: res.statusCode
+    });
+  });
+
+  next();
+});
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
@@ -40,10 +76,18 @@ app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.message || "Something went wrong!";
 
+  logger.error({
+    message: "API request failed",
+    endpoint: req.url.slice(1),
+    status: errorStatus,
+    error: errorMessage
+  });
+
   return res.status(errorStatus).send(errorMessage);
 });
 
 app.listen(8800, () => {
   connect();
+  logger.info("Server started on port 8800");
   console.log("Backend server is running!");
 });

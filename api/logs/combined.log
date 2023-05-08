@@ -1,0 +1,66 @@
+{"level":"info","message":"Server started on port 8800","service":"your-service-name"}
+{"level":"info","message":"Connected to MongoDB","service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"design","max":"","min":"","sort":"sales"},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"design","max":"","min":"","sort":"sales"},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"","max":"","min":"","sort":"sales"},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64314922e981188c87c9be4e","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64324ee3d38dfd65e18f5016","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":200}
+{"level":"info","message":"API response","method":"GET","path":"/64314922e981188c87c9be4e","service":"your-service-name","status":200}
+{"level":"info","message":"API response","method":"GET","path":"/64324ee3d38dfd65e18f5016","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs/single/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/single/6441506904c63cfbb155f023","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/reviews/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/6441506904c63cfbb155f023","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs/single/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/reviews/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/single/6441506904c63cfbb155f023","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/6441506904c63cfbb155f023","service":"your-service-name","status":304}
+{"body":{"desc":"not working","gigId":"6441506904c63cfbb155f023","star":"3"},"level":"info","message":"API request","method":"POST","path":"/api/reviews","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"POST","path":"/","service":"your-service-name","status":201}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/reviews/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/6441506904c63cfbb155f023","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64592a12f3e96e0b7c4776ac","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64592a12f3e96e0b7c4776ac","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs/single/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/reviews/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64592a12f3e96e0b7c4776ac","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/single/6441506904c63cfbb155f023","service":"your-service-name","status":200}
+{"level":"info","message":"API response","method":"GET","path":"/6441506904c63cfbb155f023","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/64592a12f3e96e0b7c4776ac","service":"your-service-name","status":304}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs/single/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/single/6441506904c63cfbb155f023","service":"your-service-name","status":304}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/reviews/6441506904c63cfbb155f023","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/6441506904c63cfbb155f023","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":304}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64592a12f3e96e0b7c4776ac","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64592a12f3e96e0b7c4776ac","service":"your-service-name","status":304}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"","max":"","min":"","sort":"sales"},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64314922e981188c87c9be4e","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64324ee3d38dfd65e18f5016","query":{},"service":"your-service-name"}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64414f2104c63cfbb155effe","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64314922e981188c87c9be4e","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/64414f2104c63cfbb155effe","service":"your-service-name","status":304}
+{"level":"info","message":"API response","method":"GET","path":"/64324ee3d38dfd65e18f5016","service":"your-service-name","status":304}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"","max":"30","min":"","sort":"sales"},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/gigs","query":{"cat":"","max":"35","min":"30","sort":"sales"},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/","service":"your-service-name","status":200}
+{"body":{},"level":"info","message":"API request","method":"GET","path":"/api/users/64314922e981188c87c9be4e","query":{},"service":"your-service-name"}
+{"level":"info","message":"API response","method":"GET","path":"/64314922e981188c87c9be4e","service":"your-service-name","status":304}
+{"level":"info","message":"Server started on port 8800","service":"your-service-name"}
+{"level":"info","message":"Connected to MongoDB","service":"your-service-name"}
+{"level":"info","message":"Server started on port 8800","service":"your-service-name"}
+{"level":"info","message":"Server started on port 8800","service":"your-service-name"}
+{"level":"info","message":"Connected to MongoDB","service":"your-service-name"}
