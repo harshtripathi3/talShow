@@ -99,7 +99,7 @@ app.use((err, req, res, next) => {
   return res.status(errorStatus).send(errorMessage);
 });
 
-app.listen(8800, () => {
+app.listen(8800,'0.0.0.0',() => {
   connect();
   logger.info("Server started on port 8800");
   console.log("Backend server is running!");
