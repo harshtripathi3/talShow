@@ -25,7 +25,7 @@ const logger = winston.createLogger({
       level: 'info',
       index: 'logs',
       clientOpts: {
-        node: 'http://localhost:9200/',
+        node: 'http://172.16.131.52:9200/',
       },
     }),
   ],
@@ -43,7 +43,7 @@ const connect = async () => {
   }
 };
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: ["http://localhost:5173","http://18.220.123.152:5173"], credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
