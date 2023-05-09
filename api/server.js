@@ -11,21 +11,26 @@ import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import winston from "winston";
+import { ElasticsearchTransport } from 'winston-elasticsearch';
+
 
 const app = express();
 dotenv.config();
 mongoose.set("strictQuery", true);
 
 const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.json(),
-  defaultMeta: { service: "your-service-name" },
+  level: 'info',
   transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: "logs/error.log", level: "error" }),
-    new winston.transports.File({ filename: "logs/combined.log" })
-  ]
+    new ElasticsearchTransport({
+      level: 'info',
+      index: 'logs',
+      clientOpts: {
+        node: 'http://localhost:9200/',
+      },
+    }),
+  ],
 });
+
 
 const connect = async () => {
   try {
