@@ -45,7 +45,7 @@ const connect = async () => {
 
 
 const corsOptions ={
-    origin:['http://localhost:5173','http://172.16.131.52:5173','http://18.188.10.203:5173'], 
+    origin:['http://localhost:5173','http://172.16.131.52:5173','http://13.58.87.111:5173'], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
