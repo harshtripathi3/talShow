@@ -14,7 +14,7 @@ import winston from "winston";
 import { ElasticsearchTransport } from 'winston-elasticsearch';
 
 
-const app = express();
+export const app = express();
 dotenv.config();
 mongoose.set("strictQuery", true);
 
@@ -104,3 +104,5 @@ app.listen(8800,'0.0.0.0',() => {
   logger.info("Server started on port 8800");
   console.log("Backend server is running!");
 });
+
+export default server;
