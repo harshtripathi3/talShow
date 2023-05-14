@@ -2,8 +2,8 @@ version: '3'
 
 services:
   frontend:
-    build: ./client
-    # image: tripathiharsh9/frontend
+    #build: ./client
+    image: tripathiharsh9/frontend
     ports:
       - 5173:5173
     tty: true
@@ -14,8 +14,8 @@ services:
       - mern-net
 
   backend:
-    build: ./api
-    # image: tripathiharsh9/backend
+    #build: ./api
+    image: tripathiharsh9/backend
     restart: always
     ports:
       - 8800:8800
