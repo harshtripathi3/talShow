@@ -9,12 +9,12 @@ import CatCard from '../../components/catCard/CatCard'
 const Home = () => {
   return (
     <div className='home'>
-      <Featured/>
-      <TrustedBy/>
-      <Slide slidesToShow={5} arrowScroll={5}> 
+      <Featured />
+      <TrustedBy />
+      <Slide slidesToShow={5} arrowScroll={5}>
         {
-          cards.map(card=>(
-            <CatCard key={card.id} item={card}/>
+          cards.map(card => (
+            <CatCard key={card.id} item={card} />
           ))
         }
       </Slide>
@@ -66,47 +66,40 @@ const Home = () => {
 
       <div className="features dark">
         <div className="container">
-        <div className="item">
+          <div className="item">
             <h1>
-              fiverr <i>business</i>
+              talShow
             </h1>
             <h1>
-              A business solution designed for <i>teams</i>
+              A place for showcasing <i>talent</i>
             </h1>
             <p>
-              Upgrade to a curated experience packed with tools and benefits,
-              dedicated to businesses
+              Working on payment, In future you can buy items!!!
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Connect to freelancers with proven business experience
+              Connect to freelancers with ease
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Get matched with the perfect talent by a customer success manager
+              Get matched with the perfect talent
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Manage teamwork and boost productivity with one powerful workspace
+              Sell Items
             </div>
-            <button>Explore fiverr Business</button>
+            <button>Good Marketplace</button>
           </div>
 
-          <div className="item">
-          <img
-              src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_2.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624768/business-desktop-870-x2.png"
-              alt=""
-            />
-          </div>
         </div>
       </div>
 
 
       <div className="explore">
         <div className="container">
-          <h1>Explore the marketplace</h1>
+          <h1>Future Additions</h1>
           <div className="items">
             <div className="item">
               <img

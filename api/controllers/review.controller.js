@@ -3,8 +3,12 @@ import Review from "../models/review.model.js";
 import Gig from "../models/gig.model.js";
 
 export const createReview = async (req, res, next) => {
-  if (req.isSeller)
+  if (req.isSeller){
+    alert("Sellers can't create a review!");
     return next(createError(403, "Sellers can't create a review!"));
+  }
+
+    
 
   const newReview = new Review({
     userId: req.userId,
@@ -19,10 +23,12 @@ export const createReview = async (req, res, next) => {
       userId: req.userId,
     });
 
-    if (review)
+    if (review){
+      alert("You have already created a review for this gig!");
       return next(
         createError(403, "You have already created a review for this gig!")
       );
+    }
 
     //TODO: check if the user purchased the gig.
 

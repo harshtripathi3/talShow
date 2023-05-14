@@ -25,7 +25,7 @@ const logger = winston.createLogger({
       level: 'info',
       index: 'logs',
       clientOpts: {
-        node: 'https://c1ba-119-161-98-68.ngrok-free.app',
+        node: 'https://c334-103-156-19-229.ngrok-free.app',
       },
     }),
   ],
@@ -45,7 +45,7 @@ const connect = async () => {
 
 
 const corsOptions ={
-    origin:['http://localhost:5173','http://172.16.131.52:5173','http://13.58.87.111:5173'], 
+    origin:['http://localhost:5173','http://172.16.131.52:5173','http://18.191.243.155:5173'], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }

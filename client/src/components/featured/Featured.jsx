@@ -7,15 +7,15 @@ function Featured() {
       <div className="container">
         <div className="left">
           <h1>
-            Find the perfect <i>freelance</i> services for your business
+            Find the perfect <i>place</i> to showcase your Talent!!!
           </h1>
-          <div className="search">
+          {/* <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="" />
               <input type="text" placeholder='Try "building mobil app"' />
             </div>
             <button>Search</button>
-          </div>
+          </div> */}
           {/* <div className="popular">
             <span>Popular:</span>
             <button>Web Design</button>

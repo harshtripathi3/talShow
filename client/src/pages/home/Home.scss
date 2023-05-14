@@ -6,7 +6,7 @@
       padding: 100px 0px;
   
       &.dark {
-        background-color: #0d084d;
+        background-color: rgb(3, 27, 3);
   
         h1 {
           color: white !important;
@@ -46,6 +46,7 @@
         align-items: center;
         gap: 200px;
         .item {
+          align-items: center;
           display: flex;
           flex-direction: column;
           gap: 15px;
