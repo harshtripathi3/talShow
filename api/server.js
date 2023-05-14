@@ -25,7 +25,7 @@ const logger = winston.createLogger({
       level: 'info',
       index: 'logs',
       clientOpts: {
-        node: 'https://9090-119-161-98-68.ngrok-free.app',
+        node: 'https://d889-119-161-98-68.ngrok-free.app',
       },
     }),
   ],
