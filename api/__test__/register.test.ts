@@ -31,7 +31,7 @@ describe('adding a new user', () => {
 		expect(users).toHaveLength(helper.initialUsers.length + 1)
 
 		const usernames = users.map(user => user.username)
-		expect(usernames).toContain('murray')
+		expect(usernames).toContain('Bhattacharya')
 	})
 
 	test('password less than 3 characters gets 400 response', async () => {
